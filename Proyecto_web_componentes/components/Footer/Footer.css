@@ -1,0 +1,14 @@
+#Footer-CV {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: var(--global-padding);
+  translate: 5;
+  text-align: center;
+}
+#Footer-CV p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}

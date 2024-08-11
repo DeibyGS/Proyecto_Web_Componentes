@@ -1,0 +1,22 @@
+nav ul li {
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary-color-text);
+  font-family: var(--global-font-family);
+}
+nav ul {
+  display: flex;
+  gap: var(--global-gap);
+}
+
+.light a {
+  color: var(--secundary-color-text);
+}
+
+#themeBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+}
