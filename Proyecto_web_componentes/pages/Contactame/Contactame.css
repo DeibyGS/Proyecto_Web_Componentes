@@ -1,0 +1,66 @@
+.container-contactame {
+  display: flex;
+}
+
+/* Estilos generales del formulario */
+form {
+  width: 60%; /* Ancho del formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: var(primary-background-color); /* Fondo del formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos del fieldset */
+fieldset {
+  border: none; /* Elimina el borde predeterminado */
+  padding: 0; /* Elimina el espaciado interno */
+  margin: 0; /* Elimina el margen */
+}
+
+/* Estilos del legend */
+legend {
+  font-size: 1.2em; /* Tamaño del texto */
+  margin-bottom: 10px; /* Espacio debajo del legend */
+  color: var(--primary-color-text); /* Color del texto */
+}
+
+/* Estilos de los labels */
+label {
+  display: block; /* Hace que el label ocupe toda la línea */
+  margin-bottom: 5px; /* Espacio debajo del label */
+  color: var(--primary-color-text); /* Color del texto */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos de los inputs y textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espacio debajo del campo */
+  border: 1px solid; /* Borde del campo */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+  background-color: rgb(26, 26, 26);
+}
+
+/* Estilos del botón de envío */
+button[type="submit"] {
+  background-color: var(--terciary-background-color); /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Elimina el borde predeterminado */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 16px; /* Tamaño del texto */
+  transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+
+button[type="submit"]:hover {
+  background-color: var(
+    --terciary-background-color
+  ); /* Color de fondo al pasar el cursor */
+}

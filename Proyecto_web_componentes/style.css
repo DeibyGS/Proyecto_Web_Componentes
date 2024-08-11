@@ -12,6 +12,7 @@
   --secundary-color-text: rgb(18, 18, 18);
   --primary-background-color: rgb(18, 18, 18);
   --secundary-background-color: rgb(249, 249, 249);
+  --terciary-color-text: rgb(211, 233, 122);
 }
 
 * {
@@ -31,4 +32,10 @@ body {
 .light {
   background-color: var(--secundary-background-color);
   color: var(--secundary-color-text);
+}
+
+main {
+  margin-top: 70px;
+  padding: var(--global-padding);
+  min-height: 80vh;
 }
