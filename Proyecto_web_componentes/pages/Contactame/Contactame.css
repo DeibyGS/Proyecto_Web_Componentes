@@ -2,65 +2,114 @@
   display: flex;
 }
 
-/* Estilos generales del formulario */
 form {
-  width: 60%; /* Ancho del formulario */
-  margin: 0 auto; /* Centra el formulario horizontalmente */
-  padding: 20px; /* Espaciado interno */
-  background-color: var(primary-background-color); /* Fondo del formulario */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(primary-background-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos del fieldset */
 fieldset {
-  border: none; /* Elimina el borde predeterminado */
-  padding: 0; /* Elimina el espaciado interno */
-  margin: 0; /* Elimina el margen */
+  border: none;
+  padding: 10px;
+  margin: 0;
 }
 
-/* Estilos del legend */
 legend {
-  font-size: 1.2em; /* Tamaño del texto */
-  margin-bottom: 10px; /* Espacio debajo del legend */
-  color: var(--primary-color-text); /* Color del texto */
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: var(--primary-color-text);
 }
 
-/* Estilos de los labels */
-label {
-  display: block; /* Hace que el label ocupe toda la línea */
-  margin-bottom: 5px; /* Espacio debajo del label */
-  color: var(--primary-color-text); /* Color del texto */
-  font-weight: bold; /* Texto en negrita */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--primary-color-text);
 }
 
-/* Estilos de los inputs y textarea */
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%; /* Ancho completo */
-  padding: 10px; /* Espaciado interno */
-  margin-bottom: 15px; /* Espacio debajo del campo */
-  border: 1px solid; /* Borde del campo */
-  border-radius: 4px; /* Bordes redondeados */
-  box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
   background-color: rgb(26, 26, 26);
+  color: var(--secundary-background-color);
 }
 
-/* Estilos del botón de envío */
 button[type="submit"] {
-  background-color: var(--terciary-background-color); /* Color de fondo */
-  color: #fff; /* Color del texto */
-  border: none; /* Elimina el borde predeterminado */
-  padding: 10px 20px; /* Espaciado interno */
-  border-radius: 4px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  font-size: 16px; /* Tamaño del texto */
-  transition: background-color 0.3s ease; /* Transición para el color de fondo */
+  background-color: var(--secundary-background-color);
+  color: var(--secundary-color-text);
+  font-weight: 700;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-  background-color: var(
-    --terciary-background-color
-  ); /* Color de fondo al pasar el cursor */
+  background-color: var(--terciary-background-color);
+}
+
+.light button[type="submit"] {
+  background-color: var(--primary-background-color);
+  color: var(--primary-color-text);
+}
+
+.light button[type="submit"]:hover {
+  background-color: var(--terciary-background-color);
+}
+
+.light input[type="text"],
+.light input[type="email"],
+.light textarea {
+  background-color: var(--secundary-background-color);
+  color: var(--secundary-color-text);
+}
+.light form label {
+  color: var(--secundary-color-text);
+}
+.light legend,
+label {
+  color: var(--secundary-color-text);
+}
+main .contactame {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-gap);
+}
+main .contactame h1 {
+  text-transform: uppercase;
+  color: var(--terciary-color-text);
+}
+
+main .contactame a {
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+main .contactame a:hover {
+  text-decoration: underline;
+}
+
+main .Contacto-Redes {
+  display: flex;
+  gap: var(--global-gap);
+}
+
+.Contacto-Redes a > img {
+  filter: invert(100%);
+}
+
+.light .Contacto-Redes a > img {
+  filter: invert(10%);
 }

@@ -2,7 +2,7 @@ import "./Navbar.css"
 
 const Navbar = ()=>{
     return `
-    <p>Deiby Gorrin</p>
+    <a id="Home" href="#"><p>Deiby Gorrin</p></a>
     <nav>
 <ul id="site-navigation">
 <li>

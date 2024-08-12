@@ -1,5 +1,6 @@
 import "./Contactame.css";
 import { cleanPage } from "../../utils/cleanPage";
+import { EnlaceRedes } from "../../components/Enlace-Redes/Enlace-Redes";
 
 export const Contactame = ()=>{
     const main = document.querySelector("main");
@@ -10,6 +11,11 @@ export const Contactame = ()=>{
     <h1>Contactame</h1>
     <p>Para más información, puedes enviarme un correo a <a href="mailto:deibygorrin@icloud.com target="_blank">deibygorrin@icloud.com</a>
     <p>Acá mi <a href="#">resumen.</a>
+    <div class="Contacto-Redes">
+    ${EnlaceRedes("./icons/github.png","Github","https://github.com/deiybg")}
+    ${EnlaceRedes("./icons/linkedin.png","Linkedin","https://www.linkedin.com/in/deibygorrin/")}
+    
+    </div>
     </div>
    <form action="/submit-form" method="POST" ">
     <fieldset>
@@ -30,7 +36,9 @@ export const Contactame = ()=>{
         <button type="submit">Enviar</button>
     </fieldset>
 </form>
+
     </div>
+    
     `
 }
 

@@ -10,9 +10,10 @@
   --global-font-family: "Poppins";
   --primary-color-text: rgb(249, 249, 249);
   --secundary-color-text: rgb(18, 18, 18);
+  --terciary-color-text: rgb(171, 207, 24);
   --primary-background-color: rgb(18, 18, 18);
   --secundary-background-color: rgb(249, 249, 249);
-  --terciary-color-text: rgb(211, 233, 122);
+  --terciary-background-color: rgb(171, 207, 24);
 }
 
 * {
@@ -23,6 +24,7 @@
 
 body {
   background-color: var(--primary-background-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: var(--primary-color-text);
   font-family: var(--global-font-family);
   transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out,

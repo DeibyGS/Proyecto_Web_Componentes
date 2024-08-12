@@ -3,7 +3,7 @@ nav ul li {
 }
 nav a {
   text-decoration: none;
-  color: var(--primary-color-text);
+  color: var(--terciary-color-text);
   font-family: var(--global-font-family);
 }
 nav ul {
@@ -12,7 +12,7 @@ nav ul {
 }
 
 .light a {
-  color: var(--secundary-color-text);
+  color: var(--terciary-color-text);
 }
 
 #themeBtn {
