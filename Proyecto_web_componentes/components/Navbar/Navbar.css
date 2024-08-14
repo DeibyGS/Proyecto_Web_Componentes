@@ -20,3 +20,26 @@ nav ul {
   border: none;
   font-size: 18px;
 }
+
+#menu-kebab {
+  width: 100%;
+  height: 60px;
+  filter: invert(8%);
+}
+
+.light #menu-kebab {
+  filter: invert(100%);
+}
+
+.hidden-kebab {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hidden-kebab {
+    display: inline-block;
+  }
+  #site-navigation {
+    display: none;
+  }
+}

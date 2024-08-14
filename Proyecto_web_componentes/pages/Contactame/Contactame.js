@@ -1,23 +1,29 @@
 import "./Contactame.css";
 import { cleanPage } from "../../utils/cleanPage";
 import { EnlaceRedes } from "../../components/Enlace-Redes/Enlace-Redes";
+import data from "../../data/data";
+import { linkPage } from "../../utils/linkPage";
+import { SobreMi } from "../SobreMi/SobreMi";
+
+
+
 
 export const Contactame = ()=>{
     const main = document.querySelector("main");
     cleanPage(main);
     main.innerHTML = `
     <div class="container-contactame">
-    <div class="contactame">
+    <div class="contacto">
     <h1>Contactame</h1>
-    <p>Para más información, puedes enviarme un correo a <a href="mailto:deibygorrin@icloud.com target="_blank">deibygorrin@icloud.com</a>
-    <p>Acá mi <a href="#">resumen.</a>
+    <p>Para más información, puedes enviarme un correo a <a href="mailto:${data.email}" target="_blank">${data.email}</a></p>
+    <p>Acá mi <a href="#" id="resumen">resumen.</a>
     <div class="Contacto-Redes">
     ${EnlaceRedes("./icons/github.png","Github","https://github.com/deiybg")}
     ${EnlaceRedes("./icons/linkedin.png","Linkedin","https://www.linkedin.com/in/deibygorrin/")}
-    
     </div>
     </div>
-   <form action="/submit-form" method="POST" ">
+    <div class="container-form">
+   <form action="/submit-form" method="POST">
     <fieldset>
         <legend>Solitar Información</legend>
         
@@ -36,9 +42,21 @@ export const Contactame = ()=>{
         <button type="submit">Enviar</button>
     </fieldset>
 </form>
-
-    </div>
+</div>
+</div>
     
-    `
+    `;
+    const resumen = document.getElementById("resumen");
+    resumen.addEventListener("click", (e)=>{
+        e.preventDefault();
+linkPage("#resumen",SobreMi);
+
+    });
+
 }
+
+
+
+    
+
 

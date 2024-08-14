@@ -9,11 +9,11 @@
   --global-gap: 20px;
   --global-font-family: "Poppins";
   --primary-color-text: rgb(249, 249, 249);
-  --secundary-color-text: rgb(18, 18, 18);
+  --secundary-color-text: #333;
   --terciary-color-text: rgb(171, 207, 24);
   --primary-background-color: rgb(18, 18, 18);
   --secundary-background-color: rgb(249, 249, 249);
-  --terciary-background-color: rgb(171, 207, 24);
+  --terciary-background-color: #2e2e2e;
 }
 
 * {

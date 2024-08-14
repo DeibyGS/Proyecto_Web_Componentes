@@ -1,26 +1,29 @@
-import "./Navbar.css"
+import "./Navbar.css";
+import data from "../../data/data";
 
 const Navbar = ()=>{
     return `
-    <a id="Home" href="#"><p>Deiby Gorrin</p></a>
+    <a id="Home" href="#"><p>${data.name} </p></a>
     <nav>
 <ul id="site-navigation">
 <li>
-        <a href="#" id="Recently-Projetcs">Proyectos Recientes</a>
+        <a href="#" id="Recently-Projetcs" class="btn-nav-bar">Proyectos Recientes</a>
     </li>
     <li>
-        <a href="#" id="My-Study">Mis Estudios</a>
+        <a href="#" id="MyStudies" class="btn-nav-bar">Mis Estudios</a>
     </li>
     <li>
-        <a href="#" id="AboutMe">Sobre Mí</a>   
+        <a href="#" id="AboutMe" class="btn-nav-bar">Sobre Mí</a>   
     </li>
      <li>
-        <a href="#" id="Contac-Me">Contáctame</a>   
+        <a href="#" id="Contac-Me" class="btn-nav-bar">Contáctame</a>   
     </li>
     <li>
         <button id="themeBtn">☀️</button>
     </li>
+    
 </ul>
+    <img src="./icons/menu-kebab.png" alt="Menu Kebab" id="menu-kebab" class="hidden-kebab"/>
 </nav>
     `
 }

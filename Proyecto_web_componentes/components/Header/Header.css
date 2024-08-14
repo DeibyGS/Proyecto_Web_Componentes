@@ -17,6 +17,6 @@ header p {
 
 header a {
   text-decoration: none;
-  color: var(--terciary-background-color);
+  color: var(--terciary-color-text);
   font-weight: 600;
 }
