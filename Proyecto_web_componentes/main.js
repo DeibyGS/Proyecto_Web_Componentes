@@ -2,9 +2,10 @@ import './style.css'
 import Header from './components/Header/Header';
 import Footer from "./components/Footer/Footer";
 import { linkPage } from './utils/linkPage';
-import { Contactame } from './pages/Contactame/Contactame';
-import { SobreMi } from './pages/SobreMi/SobreMi';
+import { ProyectosRecientes } from './pages/ProyectosRecientes/ProyectosRecientes';
 import { MisEstudios } from './pages/MisEstudios/MisEstudios';
+import { SobreMi } from './pages/SobreMi/SobreMi';
+import { Contactame } from './pages/Contactame/Contactame';
 
 
 
@@ -13,15 +14,19 @@ import { MisEstudios } from './pages/MisEstudios/MisEstudios';
 
 
 const init = ()=>{
+  
   Header();
   Footer();
   linkPage("#Home", Contactame);
-  linkPage("#Contac-Me", Contactame);
-  linkPage("#AboutMe", SobreMi);
+  linkPage("#RecentlyProjects", ProyectosRecientes);
   linkPage("#MyStudies", MisEstudios);
-  
+  linkPage("#AboutMe", SobreMi);
+  linkPage("#Contac-Me", Contactame);
+ 
 
 };
+
+
 
 
 init();

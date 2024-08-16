@@ -1,6 +1,6 @@
 import "./Contactame.css";
 import { cleanPage } from "../../utils/cleanPage";
-import { EnlaceRedes } from "../../components/Enlace-Redes/Enlace-Redes";
+import { EnlaceRedes } from "../../utils/EnlaceRedes";
 import data from "../../data/data";
 import { linkPage } from "../../utils/linkPage";
 import { SobreMi } from "../SobreMi/SobreMi";

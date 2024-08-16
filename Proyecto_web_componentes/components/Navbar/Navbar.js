@@ -7,7 +7,7 @@ const Navbar = ()=>{
     <nav>
 <ul id="site-navigation">
 <li>
-        <a href="#" id="Recently-Projetcs" class="btn-nav-bar">Proyectos Recientes</a>
+        <a href="#" id="RecentlyProjects" class="btn-nav-bar">Proyectos Recientes</a>
     </li>
     <li>
         <a href="#" id="MyStudies" class="btn-nav-bar">Mis Estudios</a>

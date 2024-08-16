@@ -27,8 +27,8 @@
 .container-tarjetas {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+  gap: var(--global-gap);
+  padding: var(--global-padding);
   justify-content: center;
 }
 
@@ -45,6 +45,21 @@
   box-sizing: border-box;
   width: 80%;
   transition: 0.5s ease;
+  animation: barrido-vertical 1s ease-out forwards;
+  border: 2px red solid;
+}
+
+@keyframes barrido-vertical {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
 }
 
 .container-divtitle {
@@ -104,28 +119,25 @@
 }
 
 .img-cursos {
-  width: 65%;
+  width: 100%;
   height: auto;
-  transition: transform 1s ease-in-out, z-index 0s 0.5s;
   cursor: pointer;
   border-radius: 12px;
-}
-
-.img-cursos:hover {
-  transform: scale(1.5);
-  z-index: 1000;
-  transition: transform 0.5s ease-in-out, z-index 0s;
+  object-fit: cover;
 }
 
 .tarjeta-cursos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: var(--global-padding);
 }
 
 .container-img-cursos {
   width: 40%;
+  height: auto;
   text-align: center;
+  align-self: center;
 }
 
 .tarjeta-hidden {
@@ -138,12 +150,36 @@
 
 .container-descripcion-cursos {
   margin: auto 0;
+  width: 50%;
+  height: auto;
+  text-align: justify;
+}
+
+.Contacto-Redes img {
+  width: 40px;
+  height: auto;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
-  .container-img-cursos {
+  .container-img-cursos,
+  .container-descripcion-cursos {
     width: 100%;
+    height: auto;
   }
   .img-cursos {
     width: 100%;
+    height: auto;
+  }
+  .tarjeta-cursos {
+    flex-direction: column;
+  }
+  .Contacto-Redes {
+    display: inline-block;
+    justify-content: center;
+    margin: 5px auto;
+  }
+
+  .Contacto-Redes img {
+    width: 25px;
   }
 }

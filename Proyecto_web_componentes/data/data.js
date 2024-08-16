@@ -39,7 +39,9 @@ const data = {
           graduationYear: 2024,
           imgTitle: "./assets/diploma-big-data.png",
           Tecnology: ["Big Data ","IA "],
-        }
+        },
+        
+
         
       ],
     },
@@ -71,8 +73,8 @@ const data = {
       {
         title: "Mi Portfolio",
         description:
-          "Utilizando los conocimientos adquiridos en HTML, CSS y JavaScript, he desarrollado mi propio portfolio web. Este proyecto refleja mi habilidad para crear interfaces web modernas y responsivas, estructuradas con HTML semántico, estilizadas con CSS avanzado, y enriquecidas con interactividad mediante JavaScript. Cada sección del portfolio ha sido cuidadosamente diseñada para destacar mis proyectos, habilidades y experiencia, ofreciendo una experiencia de usuario fluida y profesional.",
-        link: "https://github.com/deiybg/My_Repository",
+          "Utilizando los conocimientos adquiridos en HTML, CSS y JavaScript, he desarrollado mi propio portfolio web. Este proyecto refleja mi habilidad para crear interfaces web modernas y responsivas, estructuradas con HTML semántico, estilizadas con CSS avanzado, y enriquecidas con interactividad mediante JavaScript.",
+        linkGithub: "https://github.com/deiybg/My_Repository",
         preview:
           "https://my-repository-4iw7tghvs-deibys-projects-d9b6840f.vercel.app/",
           imgProject: "./assets/img-portfolio.png",     
@@ -81,7 +83,7 @@ const data = {
         title: "Mi primer proyecto Web",
         description:
           "En este proyecto, me propuse replicar la página web de Under Armour, utilizando una combinación de Grid y Flexbox para lograr un diseño similar.",
-        link: "https://github.com/deiybg/proyecto_1",
+          linkGithub: "https://github.com/deiybg/proyecto_1",
         preview:
           "https://proyecto-1-bay-sigma.vercel.app/",
           imgProject: "/assets/html5-ccs3.jpg"
@@ -90,7 +92,7 @@ const data = {
         title: "Proyecto Flex",
         description:
           "Me complace compartir que he completado mi primer proyecto utilizando los conocimientos adquiridos sobre Flexbox.",
-        link: "https://github.com/deiybg/entra_flexbox",
+          linkGithub: "https://github.com/deiybg/entra_flexbox",
         preview:
           "https://entra-flexbox-9expr807w-deibys-projects-d9b6840f.vercel.app/",
           imgProject: "/assets/flexbox.png"
