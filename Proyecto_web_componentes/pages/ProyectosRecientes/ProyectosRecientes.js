@@ -1,4 +1,3 @@
-import "./ProyectosRecientes.css";
 import {cleanPage} from "../../utils/cleanPage";
 import data from "../../data/data";
 import { EnlaceRedes } from "../../utils/EnlaceRedes";
