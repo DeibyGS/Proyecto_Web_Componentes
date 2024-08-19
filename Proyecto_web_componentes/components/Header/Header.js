@@ -13,6 +13,20 @@ const Header =()=>{
     
     document.body.appendChild(headerElement);
     changeTheme();
+
+const abrir = headerElement.querySelector("#abrir");
+const cerrar = headerElement.querySelector("#cerrar");
+const nav = headerElement.querySelector("#nav");
+
+
+abrir.addEventListener("click", ()=>{
+nav.classList.add("visible");
+});
+
+cerrar.addEventListener("click", ()=>{
+    nav.classList.remove("visible");
+
+});
 }
 
 export default Header;

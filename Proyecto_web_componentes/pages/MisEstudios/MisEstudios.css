@@ -46,7 +46,6 @@
   width: 80%;
   transition: 0.5s ease;
   animation: barrido-vertical 1s ease-out forwards;
-  border: 2px red solid;
 }
 
 @keyframes barrido-vertical {
@@ -181,5 +180,10 @@
 
   .Contacto-Redes img {
     width: 25px;
+  }
+
+  .tarjeta,
+  .container-divtitle {
+    width: 100%;
   }
 }

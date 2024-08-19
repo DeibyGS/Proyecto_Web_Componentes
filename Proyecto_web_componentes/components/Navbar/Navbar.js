@@ -4,7 +4,9 @@ import data from "../../data/data";
 const Navbar = ()=>{
     return `
     <a id="Home" href="#"><p>${data.name} </p></a>
-    <nav>
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav id="nav" class="navBar">
+    <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
 <ul id="site-navigation">
 <li>
         <a href="#" id="RecentlyProjects" class="btn-nav-bar">Proyectos Recientes</a>
@@ -23,10 +25,14 @@ const Navbar = ()=>{
     </li>
     
 </ul>
-    <img src="./icons/menu-kebab.png" alt="Menu Kebab" id="menu-kebab" class="hidden-kebab"/>
+    
 </nav>
     `
-}
+    
+};
+
+
+
 
 export const changeText = ()=>{
     const selectTheme = document.getElementById("themeBtn");
@@ -43,6 +49,7 @@ export const changeTheme = ()=>{
         changeText();
     })
 }
+
 
 
 

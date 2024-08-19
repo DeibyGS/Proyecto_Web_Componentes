@@ -1,6 +1,6 @@
 import './style.css'
 import Header from './components/Header/Header';
-import Footer from "./components/Footer/Footer";
+import Footer from './components/Footer/Footer';
 import { linkPage } from './utils/linkPage';
 import { ProyectosRecientes } from './pages/ProyectosRecientes/ProyectosRecientes';
 import { MisEstudios } from './pages/MisEstudios/MisEstudios';
@@ -17,7 +17,7 @@ const init = ()=>{
   
   Header();
   Footer();
-  linkPage("#Home", Contactame);
+  linkPage("#Home", ProyectosRecientes);
   linkPage("#RecentlyProjects", ProyectosRecientes);
   linkPage("#MyStudies", MisEstudios);
   linkPage("#AboutMe", SobreMi);
@@ -28,5 +28,5 @@ const init = ()=>{
 
 
 
-
+ProyectosRecientes();
 init();
