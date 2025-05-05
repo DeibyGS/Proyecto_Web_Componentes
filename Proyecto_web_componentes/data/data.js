@@ -93,7 +93,7 @@ const data = {
       linkGithub:
         "https://github.com/deiybg/Proyecto-Final-Master-PROMETEO/https://github.com/DeibyGS/Proyecto-Web-As-crono/main/proyecto-final-master-prometeo",
       preview:
-        "https://proyecto-final-master-https://proyecto-web-as-crono.vercel.app-kglwhzcq5.vercel.app",
+        "https://proyecto-web-as-crono-2jcb9g518-deibys-projects-d9b6840f.vercel.app",
       imgProject: "/assets/proyectoAsync.png",
     },
     {
