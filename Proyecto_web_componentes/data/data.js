@@ -88,6 +88,15 @@ const data = {
       imgProject: "/assets/flexbox.png",
     },
     {
+      title: "Proyecto Async",
+      description: "Proyecto para practicar promesas asincronas",
+      linkGithub:
+        "https://github.com/deiybg/Proyecto-Final-Master-PROMETEO/https://github.com/DeibyGS/Proyecto-Web-As-crono/main/proyecto-final-master-prometeo",
+      preview:
+        "https://proyecto-final-master-https://proyecto-web-as-crono.vercel.app-kglwhzcq5.vercel.app",
+      imgProject: "/assets/proyectoAsync.png",
+    },
+    {
       title: "Proyecto Final 1er año Master",
       description:
         "Me complace compartir el primer proyecto del primer año del Master Full Stack de PROMETEO",
