@@ -5,21 +5,24 @@ import data from "../../data/data";
 import { linkPage } from "../../utils/linkPage";
 import { SobreMi } from "../SobreMi/SobreMi";
 
-
-
-
-export const Contactame = ()=>{
-    const main = document.querySelector("main");
-    cleanPage(main);
-    main.innerHTML = `
+export const Contactame = () => {
+  const main = document.querySelector("main");
+  cleanPage(main);
+  main.innerHTML = `
     <div class="container-contactame">
     <div class="contacto">
     <h1>Contactame</h1>
-    <p>Para más información, puedes enviarme un correo a <a href="mailto:${data.email}" target="_blank">${data.email}</a></p>
+    <p>Para más información, puedes enviarme un correo a <a href="mailto:${
+      data.email
+    }" target="_blank">${data.email}</a></p>
     <p>Acá mi <a href="#" id="resumen">resumen.</a>
     <div class="Contacto-Redes">
-    ${EnlaceRedes("./icons/github.png","Github","https://github.com/deiybg")}
-    ${EnlaceRedes("./icons/linkedin.png","Linkedin","https://www.linkedin.com/in/deibygorrin/")}
+    ${EnlaceRedes("./icons/github.png", "Github", "https://github.com/deiybg")}
+    ${EnlaceRedes(
+      "./icons/linkedin.png",
+      "Linkedin",
+      "https://www.linkedin.com/in/deibygorrin/"
+    )}
     </div>
     </div>
     <div class="container-form">
@@ -46,17 +49,9 @@ export const Contactame = ()=>{
 </div>
     
     `;
-    const resumen = document.getElementById("resumen");
-    resumen.addEventListener("click", (e)=>{
-        e.preventDefault();
-linkPage("#resumen",SobreMi);
-
-    });
-
-}
-
-
-
-    
-
-
+  const resumen = document.getElementById("resumen");
+  resumen.addEventListener("click", (e) => {
+    e.preventDefault();
+    linkPage("#resumen", SobreMi);
+  });
+};
