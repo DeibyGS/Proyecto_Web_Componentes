@@ -1,12 +1,11 @@
 import "./SobreMi.css";
-import {cleanPage} from "../../utils/cleanPage";
+import { cleanPage } from "../../utils/cleanPage";
 import data from "../../data/data";
 
-export const SobreMi = ()=>{
-    const main = document.querySelector("main");
-    cleanPage(main);
-    main.innerHTML= 
-    `
+export const SobreMi = () => {
+  const main = document.querySelector("main");
+  cleanPage(main);
+  main.innerHTML = `
 
 
 <div class="container-SobreMi">
@@ -22,5 +21,5 @@ export const SobreMi = ()=>{
 
 </div>
 </div>
-`};
-
+`;
+};

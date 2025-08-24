@@ -4,7 +4,7 @@ const data = {
   email: "deibygorrin@icloud.com",
   avatar: "/assets/My-Foto.jpg",
   aboutMe:
-    "Un apasionado del diseño web y del desarrollo de aplicaciones multiplataforma (DAM).A mis 32 años, he decidido dar un giro significativo en mi carrera profesional y aventurarme en el fascinante mundo de la programación.Actualmente, me encuentro trabajando en el sector de la hostelería, una industria que me ha enseñado la importancia de la atención al detalle, la gestión del tiempo y el servicio al cliente. Sin embargo, mi verdadera pasión siempre ha sido la tecnología y el diseño. Esta pasión me ha llevado a iniciar estudios en Diseño Web y Desarrollo de Aplicaciones Multiplataforma, con el firme objetivo de transformar mi carrera y dedicarme a lo que realmente me apasiona.",
+    "Soy un profesional en transición hacia el sector tecnológico, actualmente cursando el segundo año de Desarrollo de Aplicaciones Multiplataforma (DAM) y un Máster Web Full Stack. Cuento con la certificación Oracle Database 23ai SQL Certified Associate y me encuentro en proceso de especialización en Oracle Cloud Infrastructure (OCI) y en soluciones empresariales de análisis e informes (EPM). Mi objetivo es consolidar una carrera en el ámbito tecnológico, combinando programación, gestión de datos y soluciones en la nube, para contribuir a proyectos innovadores y de alto impacto empresarial.",
 
   education: {
     study: [
@@ -27,9 +27,24 @@ const data = {
       {
         Title: "Master Desarrollo de Aplicaciones Web",
         Institute: "The Power MBA",
-        graduationYear: "Actual",
+        graduationYear: "En Curso",
         imgTitle: "./assets/diploma-dam.png",
         Tecnology: ["HTML5 ", "CCS3 ", "JS "],
+      },
+      {
+        Title:
+          "Curso Especialista en la creación de informes y reportes empresariales Oracle (EPM)",
+        Institute: "Cas-Training",
+        graduationYear: "En Curso",
+        imgTitle: "./assets/oracle.png",
+        Tecnology: ["Power BI", "Cloud", "Narrative Reporting", "Oracle"],
+      },
+      {
+        Title: "Oracle Database 23ai SQL Certified Associate",
+        Institute: "Oracle",
+        graduationYear: 2025,
+        imgTitle: "./assets/oracleSql23ai.jpg",
+        Tecnology: ["SQL", "Base de Datos", "Oracle"],
       },
 
       {
@@ -38,6 +53,13 @@ const data = {
         graduationYear: 2024,
         imgTitle: "./assets/diploma-big-data.png",
         Tecnology: ["Big Data ", "IA "],
+      },
+      {
+        Title: "Curso Desarrollador Oracle SQL-PL/SQL",
+        Institute: "Cas-Training",
+        graduationYear: 2025,
+        imgTitle: "./assets/PLSQL.png",
+        Tecnology: ["PL/SQL", "SQL", "Base de Datos", "Oracle"],
       },
     ],
   },

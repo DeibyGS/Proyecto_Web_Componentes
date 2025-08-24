@@ -41,3 +41,7 @@ main {
   padding: var(--global-padding);
   min-height: 80vh;
 }
+
+.mi-descripcion p {
+  text-align: justify;
+}
