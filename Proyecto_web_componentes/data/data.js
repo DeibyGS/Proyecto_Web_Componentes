@@ -97,6 +97,14 @@ const data = {
       imgProject: "/assets/proyectoAsync.png",
     },
     {
+      title: "Cuestionario 1er año DAM y DAW",
+      description:
+        "Aplicación interactiva de cuestionarios tipo test diseñada para ayudar a estudiantes de DAM y DAW en la preparación de exámenes del primer año.",
+      linkGithub: "https://github.com/DeibyGS/questionnary",
+      preview: "https://questionnary.vercel.app",
+      imgProject: "/assets/questionnaryMain.png",
+    },
+    {
       title: "Proyecto Final 1er año Master",
       description:
         "Me complace compartir el primer proyecto del primer año del Master Full Stack de PROMETEO",
